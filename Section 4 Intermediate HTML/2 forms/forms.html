@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+
+    <!-- action - where the form sends data to -->
+    <!-- method - what HTTP method (get/post) -->
+
+    <!-- Illustrate that data from form is sent somwhere in form of query string in uri-->
+    <form action="http://wikipedia.org" method="GET">
+
+        <!-- Forms can be written this way too -->
+        <!-- <label> 
+            Username:
+            <input name="username" type="text" placeholder="username">
+        </label> -->
+
+
+        <label for="username">
+            Username:
+        </label>
+        <input name="username" type="email" placeholder="username" required>
+        <!-- ''"type = "email"' checks input is email -->
+
+
+        <label for="password">
+            Password:
+        </label>
+        <input name="password" type="password" placeholder="password" required>
+        <!-- required = not empty -->
+
+        <input type="submit" />
+    </form>
+
+
+</body>
+
+</html>
